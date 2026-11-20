@@ -1,0 +1,99 @@
+body {
+    font-family:Arial, sans-serif;
+    background-color: #f5efff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23c5a5e8' opacity='.55'%3E%3Cellipse cx='50' cy='61' rx='15' ry='12'/%3E%3Cellipse cx='31' cy='42' rx='7' ry='10' transform='rotate(-25 31 42)'/%3E%3Cellipse cx='45' cy='32' rx='7' ry='10' transform='rotate(-8 45 32)'/%3E%3Cellipse cx='61' cy='33' rx='7' ry='10' transform='rotate(12 61 33)'/%3E%3Cellipse cx='74' cy='45' rx='7' ry='10' transform='rotate(28 74 45)'/%3E%3C/g%3E%3C/svg%3E");
+    text-align: center;
+}
+h1 {
+    color: #2c3e50;
+}
+button {
+     padding: 12px 28px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #684783;
+    background-color: #eadcf7;
+    border: 2px solid #d4b5eb;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fffaff;
+    border: 2px solid #d8bfe8;
+    border-radius: 15px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#win-message {
+    display: none;
+    background-color: #fffaff;
+    border: 2px solid #d8bfe8;
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    margin: 20px auto;
+    color: #684783;
+    box-shadow: 0 4px 15px #d8bfe8;
+}
+
+#win-message h2 {
+    color: #8e63b0;
+}
+
+#win-message p {
+    font-size: 16px;
+}
+#game-board {
+    position: relative;
+}
+
+#win-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fffaff;
+    border: 2px solid #d8b8ed;
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    min-height: 230px;
+    box-sizing: border-box;
+    z-index: 10;
+    color: #6b4b7a;
+    text-align: center;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+#win-message h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+#win-message img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+}
